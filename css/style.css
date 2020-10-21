@@ -103,7 +103,15 @@ body {
 .container .biglietto td {
   font-size: 1.2rem;
 }
-.container .biglietto h2 {
+
+.container hr {
+  color: white;
+  background-color: white;
+  margin-bottom: 50px;
+  height: 5px;
+}
+
+.biglietto h2 {
   margin-bottom: 50px;
 }
 
