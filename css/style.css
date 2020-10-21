@@ -36,6 +36,10 @@ body {
   border-radius: 10px;
   margin-right: 20px;
 }
+.container .data-wrapper button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
 
 .container .data-input {
   display: flex;
@@ -52,8 +56,8 @@ body {
   padding: 10px;
 
   background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
     ),
     url("../css/img/treno.png");
 }
@@ -80,6 +84,11 @@ body {
 }
 .container .data-input div:last-child {
   margin-right: 0;
+}
+
+#biglietto {
+  display: none;
+  transition: display 0.4s ease;
 }
 
 .container .biglietto table {

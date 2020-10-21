@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <script src="script.js"></script> -->
+    <script defer src="script.js"></script>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +14,11 @@
         <div class="data-input">
           <div class="name">
             <h4>Nome e cognome</h4>
-            <input type="text" />
+            <input id="name-surname" type="text" />
           </div>
           <div class="km">
             <h4>Km da percorrere</h4>
-            <input type="text" />
+            <input id="km-richiesti" type="text" />
           </div>
           <div class="eta">
             <h4>Fascia di età</h4>
@@ -29,26 +29,26 @@
             </select>
           </div>
         </div>
-        <button>Genera</button>
-        <button>Annulla</button>
+        <button id="genera-btn">Genera</button>
+        <button id="annulla-btn">Annulla</button>
       </div>
       <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <div class="biglietto">
+      <div id="biglietto" class="biglietto">
         <h2>DETTAGLIO PASSEGGERI</h2>
         <table>
           <tr>
-            <th id="customer-name">Nome Passeggero</th>
+            <th>Nome Passeggero</th>
             <th>Offerta</th>
             <th>Carrozza</th>
             <th>Codice CP</th>
             <th>Costo Biglietto</th>
           </tr>
           <tr>
-            <td>asdasd</td>
-            <td>asdasdsadasdasdasd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
+            <td id="customer-name"></td>
+            <td id="offer"></td>
+            <td id="carrozza-number">asd</td>
+            <td id="seat-number"></td>
+            <td id="price"></td>
           </tr>
         </table>
       </div>
