@@ -32,7 +32,7 @@ generaBtn.addEventListener("click", function () {
 
   var prezzoBiglietto = (kmRichiesti * PREZZO_KM).toFixed(2);
 
-  if (isNaN(kmRichiesti) || customerName == " " || kmRichiesti == " ") {
+  if (isNaN(kmRichiesti) || customerName === "" || kmRichiesti === "") {
     alert("Dati mancanti o incorretti, riprova.");
   } else if (fasciaEta == "minorenne") {
     document.getElementById("biglietto").style.display = "block";
