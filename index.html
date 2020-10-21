@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Treno</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="data-wrapper">
+        <div class="data-input">
+          <div class="name">
+            <h4>Nome e cognome</h4>
+            <input type="text" />
+          </div>
+          <div class="km">
+            <h4>Km da percorrere</h4>
+            <input type="text" />
+          </div>
+          <div class="eta">
+            <h4>Fascia di età</h4>
+            <select name="eta" id="fascia-eta">
+              <option value="minorenne">Meno di 18 anni</option>
+              <option value="over-65">Più di 65 anni</option>
+              <option value="nessuna">Nessuna delle due</option>
+            </select>
+          </div>
+        </div>
+        <button>Genera</button>
+        <button>Annulla</button>
+      </div>
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="biglietto">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <table>
+          <tr>
+            <th id="customer-name">Nome Passeggero</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice CP</th>
+            <th>Costo Biglietto</th>
+          </tr>
+          <tr>
+            <td>asdasd</td>
+            <td>asdasdsadasdasdasd</td>
+            <td>asd</td>
+            <td>asd</td>
+            <td>asd</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>

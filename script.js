@@ -1,7 +1,14 @@
+var PREZZO_KM = 0.21;
+var SCONTO_GIOVANI = 0.2;
+var SCONTO_ANZIANI = 0.4;
+
 var kmRichiesti = parseInt(prompt("Quanti chilometri vuoi percorrere?"));
+
 var etaPasseggero = parseInt(prompt("Inserisci la tua età"));
 
-var prezzoBiglietto = (kmRichiesti * 0.21).toFixed(2);
+var prezzoBiglietto = kmRichiesti * PREZZO_KM;
+
+console.log(prezzoBiglietto);
 
 if (!isNaN(etaPasseggero) && !isNaN(kmRichiesti)) {
   if (etaPasseggero < 18) {
@@ -10,7 +17,7 @@ if (!isNaN(etaPasseggero) && !isNaN(kmRichiesti)) {
         prezzoBiglietto +
         " Euro" +
         " adesso è di " +
-        (prezzoBiglietto * 0.8).toFixed(2) +
+        (prezzoBiglietto -= prezzoBiglietto * SCONTO_ANZIANI).toFixed(2) +
         " Euro"
     );
   } else if (etaPasseggero > 65) {
@@ -19,7 +26,7 @@ if (!isNaN(etaPasseggero) && !isNaN(kmRichiesti)) {
         prezzoBiglietto +
         " Euro" +
         " adesso è di " +
-        (prezzoBiglietto * 0.6).toFixed(2) +
+        (prezzoBiglietto -= prezzoBiglietto * SCONTO_GIOVANI).toFixed(2) +
         " Euro"
     );
   } else {
