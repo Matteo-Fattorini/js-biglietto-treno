@@ -6,8 +6,6 @@ var generaBtn = document.getElementById("genera-btn");
 var annullaBtn = document.getElementById("annulla-btn");
 
 generaBtn.addEventListener("click", function () {
-  // visualizzo il biglietto
-
   //assegno numero carrozza
   var randomSeat = Math.floor(Math.random() * 10000 + 90000);
   var randomCarrozza = Math.floor(Math.random() * 10 + 1);
@@ -51,6 +49,8 @@ generaBtn.addEventListener("click", function () {
     document.getElementById("price").innerHTML = prezzoBiglietto + " €";
   }
 });
+
+// implemento bottone annulla
 
 annullaBtn.addEventListener("click", function () {
   document.getElementById("biglietto").style.display = "none";
